@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #222122;
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  background: #36363639;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  min-width: 42%;
+  min-height: 350px;
+  /* gap: 55px; */
+  margin-top: 13%;
+}
+
+.container label {
+  font-size: 260%;
+  text-transform: uppercase;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+label {
+  /* background-color: #585858; */
+  width: 80%;
+  height: auto;
+  overflow: hidden;
+  font-stretch: normal;
+  font-style: normal;
+  margin-bottom: 48px;
+  /* padding-bottom: 20px; */
+  /* text-overflow: ellipsis; */
+  white-space: pre-wrap;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 1.5px #000000;
+  letter-spacing: 2px;
+}
+
+.container input {
+  min-width: 25%;
+  min-height: 40px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px 2px #000000f7;
+  outline: none;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: #36363639;
+  color: rgba(255, 255, 255, 0.551);
+}
+
+.container button {
+  width: 100px;
+  min-height: 35px;
+  border-radius: 40px/40px;
+  border: none;
+  font-size: 21px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transform: 0.1s;
+  font-weight: 700;
+  box-shadow: 0 0.5px 1.5px 1px;
+  margin-bottom: 20px;
+  background-color: #36363639;
+}
+
+.container button:hover {
+  transition: ease-in-out;
+  cursor: pointer;
+  background-color: #6c6c6c;
+  color: #191919;
+}
+
+p {
+  /* background-color: #7e7b7e; */
+  min-width: fit-content;
+  min-height: fit-content;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(238, 236, 236);
+  font-weight: 700;
+  word-wrap: break-word;
+  margin-top: 2.5%;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .container label {
+    font-size: 245%;
+  }
+  .container input {
+    min-width: 15%;
+    font-size: 20px;
+  }
+  .container p {
+    font-size: 20px;
+  }
+}
